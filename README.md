@@ -1,3 +1,3 @@
 # news-filtering
 
-Plugin designed to filter websites from obnoxious elements. 
+WIP Chrome Plugin designed to filter websites from obnoxious elements. 
