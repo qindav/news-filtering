@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "News Filter",
+  "short_name": "News Filter",
+  "version": "0.1",
+  "description": "Grab news documents from webpages and nothing else.",
+  "options_page": "html/options.html",
+  "permissions": ["storage",
+				  "webRequest",
+				  "*://*.google.com/"
+	],
+  "browser_action": {
+    "default_title": "News Filter"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*", "https://*/*"
+      ],
+      "js": ["js/main.js"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Filter Options</title>
+</head>
+<body>
+
+<h3>Here's your current list of sites and elements being modified:</h3>
+<input type="button" id = "presetbtn" value="Use Defaults">
+<p id="p1">Nothing here yet?</p>
+
+
+<h3>Add a new entry:</h3>
+<p>Domain: web domain where the article occurs<br>
+Body: Main body that contains the web content<br>
+Junk: Residual content that you'd like to be removed from the body<br>
+Body and junk support multiple entries. Seperate with comma<br></p>
+<form>
+  <label for="d">Domain:</label><br>
+  <input type="text" id="dname" name="dname"><br>
+  <label for="b">Body:</label><br>
+  <input type="text" id="b" name="b"><br>
+  <label for="j">Junk:</label><br>
+  <input type="text" id="j" name="j"><br>
+</form>
+<input type="button" id = "submitbtn" value="Submit"><br>
+
+<form>
+  <label for="d">Remove a domain:</label><br>
+  <input type="text" id="rdomain" name="rdomain"><br>
+</form>
+<input type="button" id = "removebtn" value="Remove"><br>
+
+
+
+
+<script type="text/javascript" src="../js/options.js"></script>
