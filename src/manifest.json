@@ -5,19 +5,29 @@
   "version": "0.1",
   "description": "Grab news documents from webpages and nothing else.",
   "options_page": "html/options.html",
+  "icons": {
+          "128": "img/icon.png"
+  },
+  
   "permissions": ["storage",
 				  "webRequest",
-				  "*://*.google.com/"
+				  "*://*.google.com/",
+				  "activeTab"
 	],
   "browser_action": {
     "default_title": "News Filter"
+  },
+  "background" : {
+    "scripts" : ["js/background.js"],
+	"default_icon": "img/icon.png"
   },
   "content_scripts": [
     {
       "matches": [
         "http://*/*", "https://*/*"
       ],
-      "js": ["js/main.js"]
+	  "css": ["css/news_filter.css"],
+	  "js": ["js/main.js"]
     }
   ]
 }
