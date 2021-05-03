@@ -65,8 +65,6 @@ function displayBanner(normal_copy, filtered_copy){
 	controls.appendChild(closeButton);
 	
 	
-	
-	
 	document.body.insertBefore(controls, document.body.firstChild);
 	
 	return true;

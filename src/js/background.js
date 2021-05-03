@@ -16,7 +16,6 @@ chrome.runtime.onInstalled.addListener(function(details){
 		Websites
 		****************************************
 		*/
-		
 		//Buzzfeed
 		domainValue = "https://www.buzzfeednews.com/article/"
 		stuff = [["#news-content"],[]]

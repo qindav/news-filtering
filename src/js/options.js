@@ -12,7 +12,6 @@ document.getElementById("submitbtn").addEventListener('click',function () {
 		//Refresh table
 		updateTable();
 	});
-
 });
 
 //Delete a entry
